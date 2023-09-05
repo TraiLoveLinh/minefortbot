@@ -64,6 +64,8 @@ const createBot = (): void => {
 	});
 	bot.once('login', () => {
 		console.log(`AFKBot logged in ${bot.username}\n\n`);
+		let gchat: string = 'AFKBot logged in '+bot.username;
+		bot.chat(gchat)
 	});
 };
 
